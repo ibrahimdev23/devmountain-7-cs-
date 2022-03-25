@@ -46,7 +46,7 @@ const hasUniqueChars = (str) => {
 function isPangram(string){
 
 
-    let alphatbet = /([a-z])(?!.*\1)/gi;        //   this is 0(1) time complexity and 0(n) space 
+    let alphatbet = /([a-z])(?!.*\1)/gi;        //   this is 0(n) time complexity and 0(n) space 
     const letters = string.toLowerCase().match(alphatbet);
   
   
@@ -63,7 +63,7 @@ function isPangram(string){
 
 const findLongestWord = (array) => {
 
-    let lengthArray = []
+    let lengthArray = []           //this is 0(n^2) space is 0(n)
       array.forEach(item => {
         lengthArray.push(item.length)
         
